@@ -19,6 +19,7 @@
       };
       packages = {
         actual-deps = actual-deps.build;
+        default = actual-deps.build;
       };
       apps.actual-deps = flake-utils.lib.mkApp {
         drv = actual-deps.build;
